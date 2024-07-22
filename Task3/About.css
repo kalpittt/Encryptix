@@ -1,0 +1,161 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  background-image: url("diagonal_stripes.png"); /* Replace with your desired background image path */
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; /* For sticky footer using Flexbox */
+}
+
+header {
+  background-color: transparent;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+h1 {
+  margin: 0;
+  color: #000; /* Changed to black */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+  display: flex;
+}
+
+nav li {
+  margin-right: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000; /* Changed to black */
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #666; /* Light gray color on hover */
+}
+
+.search {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.search input {
+  padding: 10px 20px;
+  border: 1px solid #000; /* Changed to black */
+  border-radius: 5px;
+  background-color: transparent;
+  color: #000; /* Changed to black */
+  transition: background-color 0.3s ease;
+}
+
+.search input:focus {
+  background-color: rgba(0, 0, 0, 0.1); /* Slightly darker background on focus */
+  outline: none;
+}
+
+main {
+  padding: 40px 0;
+  flex: 1;
+}
+
+.about-us {
+  text-align: center;
+  border: 2px solid #000; /* Changed to black */
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+  background-color: #fff; /* White background for better readability */
+}
+
+.about-us p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.team {
+  text-align: center;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.member {
+  text-align: center;
+  margin: 20px;
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.member h3,
+.member p {
+  margin-bottom: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: center; /* Center footer content horizontally */
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+footer p {
+  margin: 0; /* Remove default margin */
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack header items vertically on smaller screens */
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack navigation items vertically on smaller screens */
+    margin-bottom: 10px;
+  }
+
+  nav li {
+    margin: 10px 0; /* Space out navigation items vertically */
+  }
+
+  .search {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .search input {
+    width: 100%; /* Full width of container */
+  }
+}

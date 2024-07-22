@@ -1,0 +1,147 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  background-image: url("diagonal_stripes.png"); /* Replace with your desired background image path */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: transparent;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+h1 {
+  margin: 0;
+  color: #000; /* Changed to black */
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3); /* Updated to ensure contrast with new text color */
+}
+
+nav {
+  display: flex;
+}
+
+nav li {
+  margin-right: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000; /* Changed to black */
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #333;
+}
+
+.search {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.search input {
+  padding: 10px 20px;
+  border: 1px solid #333; /* Changed to black for better visibility */
+  border-radius: 5px;
+  background-color: transparent;
+  color: #000; /* Changed to black */
+  transition: background-color 0.3s ease;
+}
+
+.search input:focus {
+  background-color: rgba(0, 0, 0, 0.2); /* Updated to match new color scheme */
+  outline: none;
+}
+
+main {
+  padding: 40px 0;
+}
+
+.product-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 2px solid #000; /* Changed to black */
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-images {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.product-images img.active {
+  opacity: 1;
+  border: 2px solid #333; /* Changed to black */
+}
+
+.product-info {
+  width: 60%;
+  padding-left: 30px;
+}
+
+.product-info h2 {
+  margin: 10px 0;
+  font-size: 2rem;
+  color: #000; /* Changed to black */
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #000; /* Changed to black */
+}
+
+button {
+  padding: 12px 30px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #222;
+}
+
+footer {
+  background-color: #333;
+  color: #000; /* Changed to black */
+  padding: 20px;
+  text-align: center;
+}
